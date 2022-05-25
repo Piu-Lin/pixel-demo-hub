@@ -13,6 +13,7 @@ const bootstrap = async () => {
       //   window.connection
       //   .emitUIInteraction('Event_base')
       // },
+      ueMultiTouch:true,
     })
     const player = document.querySelector('body')
     // document.querySelector('body').style.width = '100vw'
