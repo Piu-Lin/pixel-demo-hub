@@ -5,7 +5,7 @@ import { Launcher } from 'live-cat'
 import privacy from  '../privacy/index.json'
 const address = 'https://app.3dcat.live'
 const bootstrap = async () => {
-  try {
+  try {みるしゃしん
     const launch = new Launcher({
       address,
       appKey:privacy.appKeyt,
