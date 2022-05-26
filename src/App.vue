@@ -1,15 +1,17 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
+
 import Connect from './connect.vue'
 import MessageDemo from './components/messageDemo.vue'
-import Home from './pages/Home.vue';
-
+import Home from './pages/Home.vue'
+import { useStore } from 'vuex'
+import { computed } from 'vue'
+const store  = useStore()
+const count = computed(() => store.getters.count)
 </script>
 
 <template>
 <MessageDemo/>
-<Connect/>
+<!-- <Connect/> -->
 </template>
 
 <style>
@@ -19,3 +21,4 @@ body {
     margin: 0;
 }
 </style>
+

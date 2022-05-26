@@ -5,7 +5,7 @@ import { Launcher } from 'live-cat'
 import privacy from  '../privacy/index.json'
 const address = 'https://app.3dcat.live'
 const bootstrap = async () => {
-  try {みるしゃしん
+  try {
     const launch = new Launcher({
       address,
       appKey:privacy.appKeyt,
@@ -25,14 +25,12 @@ const bootstrap = async () => {
     window.connection = connection
     window.livePlayer = livePlayer
     window.connection.event.interaction.on((msg) =>
-
        console.log('meg:' ,msg)
     )
   } catch (error) {
     console.error(error)
   }
 }
-
 window.addEventListener('DOMContentLoaded', () => {
   if (
     navigator.userAgent.includes('miniProgram') ||
