@@ -3,15 +3,18 @@
 import Connect from './connect.vue'
 import MessageDemo from './components/messageDemo.vue'
 import Home from './pages/Home.vue'
-import { useStore } from 'vuex'
-import { computed } from 'vue'
-const store  = useStore()
-const count = computed(() => store.getters.count)
+import Hero from './pages/Hero/Hero.vue'
+
+
 </script>
 
 <template>
-<MessageDemo/>
+<!-- <MessageDemo/> -->
 <!-- <Connect/> -->
+<Hero/>
+<div>
+    
+</div>
 </template>
 
 <style>
