@@ -4,6 +4,7 @@
 import { Launcher } from 'live-cat'
 import privacy from  '../privacy/index.json'
 const address = 'https://app.3dcat.live'
+const emit = defineEmits(["trigger"])
 const bootstrap = async () => {
   try {
     const launch = new Launcher({

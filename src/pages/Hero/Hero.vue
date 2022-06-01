@@ -7,9 +7,9 @@
       <div id="loading-title">资源加载中</div>
   </div>
 </template>
-
+ 
 <script setup>
-import { onMounted,ref } from "vue";
+import { onMounted,ref } from "vue"; 
 import LoadAni from './components/LoadAni.vue'
 </script>
 
@@ -25,13 +25,15 @@ import LoadAni from './components/LoadAni.vue'
         width: 100%;
         height: 100%;
         object-fit:cover;
-        z-index: -1;
+        z-index: 10;
     }
     #loading-ani{
         position: absolute;
         left:50%;
         top:40%;
         transform:translate(-50%,-50%);
+        z-index: 11;
+
     }
     #loading-title{
         position: absolute;
@@ -42,6 +44,8 @@ import LoadAni from './components/LoadAni.vue'
         font-size: 24px;
         color:wheat;
         opacity: 0.8;
+        z-index: 11;
+
     }
 }
 </style>
