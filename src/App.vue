@@ -1,23 +1,25 @@
 <template>
-<MessageDemo/>
+<!-- <MessageDemo/> -->
 <!-- <Connect @trigger="trigger"/> -->
 <Hero v-if="!LoadComplete"/>
 <FakeConnet @trigger="trigger"/>
+<Interaction/> 
 </template>
 <script setup>
 import {ref} from "vue"
 import Connect from './connect.vue'
 import MessageDemo from './components/messageDemo.vue'
-import Home from './pages/Home.vue'
 import Hero from './pages/Hero/Hero.vue'
-import FakeConnet from './components/FakeConnet.vue';
+import FakeConnet from './components/FakeConnet.vue'
+import Interaction from './pages/Interaction/Interaction.vue'
+
 /** 资源加载是否完成 */
 let LoadComplete = ref(false)
 const trigger=()=>{
     console.log("收到扳机")
     LoadComplete.value=true
 }
-</script>
+</script>chahua花#acguc.com#129171#
 <style>
 body {
     width : 100vw;
