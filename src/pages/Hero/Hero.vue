@@ -5,12 +5,14 @@
           <LoadAni/>
       </div>
       <div id="loading-title">资源加载中</div>
+        <ProgressBar/>
   </div>
 </template>
  
 <script setup>
 import { onMounted,ref } from "vue"; 
 import LoadAni from './components/LoadAni.vue'
+import ProgressBar from "./components/ProgressBar.vue";
 </script>
 
 <style lang="less" scoped>
@@ -47,5 +49,6 @@ import LoadAni from './components/LoadAni.vue'
         z-index: 11;
 
     }
+  
 }
 </style>

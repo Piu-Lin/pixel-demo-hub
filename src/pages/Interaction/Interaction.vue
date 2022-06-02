@@ -26,6 +26,7 @@
 const day='{"eventname": "Event_day"}'
 const night='{"eventname": "Event_night"}'
 const res='{"eventname": "Event_reset_default_view"}'
+const play='{"eventname": "Event_play_movie"}'
 
 function snedAssignMessage(assignMessage) {
     console.log("开始传输"+assignMessage)

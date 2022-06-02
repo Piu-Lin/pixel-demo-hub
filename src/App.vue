@@ -19,7 +19,7 @@ const trigger=()=>{
     console.log("收到扳机")
     LoadComplete.value=true
 }
-</script>chahua花#acguc.com#129171#
+</script>
 <style>
 body {
     width : 100vw;
