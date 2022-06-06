@@ -26,7 +26,8 @@ const bootstrap = async () => {
     window.connection = connection
     window.livePlayer = livePlayer
     window.connection.event.interaction.on((msg) =>
-       console.log('meg:' ,msg)
+      //  {eventname: "Event_Connected", data: "Event_Connected"}
+      emit("trigger",true)
     )
   } catch (error) {
     console.error(error)

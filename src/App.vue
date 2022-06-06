@@ -1,8 +1,7 @@
 <template>
-<!-- <MessageDemo/> -->
-<!-- <Connect @trigger="trigger"/> -->
+<Connect @trigger="trigger"/>
 <Hero v-if="!LoadComplete"/>
-<FakeConnet @trigger="trigger"/>
+<!-- <FakeConnet @trigger="trigger"/> -->
 <Interaction/> 
 </template>
 <script setup>

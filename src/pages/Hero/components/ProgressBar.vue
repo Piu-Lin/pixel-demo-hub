@@ -13,16 +13,7 @@ timer = setInterval(() => {
     if(rate.value>=100){
         clearInterval(timer)
     }   
-}, 25)
-function sleep (time) {
-    return new Promise((resolve) => setTimeout(resolve, time));
-}
-onBeforeUnmount( async()=>{
-    while(1){
-        await sleep(1000)
-    }
-    rate.value=100
-})
+}, 30)
 
 </script>
 

@@ -41,14 +41,15 @@ function snedAssignMessage(assignMessage) {
 #bottomIcon{
     display: flex;
     position:absolute; 
-    bottom:0px;
+    bottom:20px;
     width:100%;
     justify-content:center;
+    z-index: 2;
     .Mode{
       display: flex;
       margin: 0px 10px;
       background-color:white;
-      opacity:.8;
+      opacity:.7;
       align-items: center;
       border: 2px solid white;
       border-radius: 8px;
@@ -59,7 +60,8 @@ function snedAssignMessage(assignMessage) {
       }
       .modeContent{
         font-size:24px;
-        color: antiquewhite;
+        color: black;
+        opacity:.7;
       }
     }
     
