@@ -16,6 +16,14 @@
       <img class="Icon" src="/src/assets/Interaction/play.svg" alt=""/>
       <div class="modeContent">播放</div>
   </div>
+  <div @click="snedAssignMessage(sunny)" class="Mode">
+      <img class="Icon" src="/src/assets/Interaction/play.svg" alt=""/>
+      <div class="modeContent">晴天</div>
+  </div>
+  <div @click="snedAssignMessage(rainy)" class="Mode">
+      <img class="Icon" src="/src/assets/Interaction/play.svg" alt=""/>
+      <div class="modeContent">雨天</div>
+  </div>
 </div>
   
 
@@ -27,6 +35,10 @@ const day='{"eventname": "Event_day"}'
 const night='{"eventname": "Event_night"}'
 const res='{"eventname": "Event_reset_default_view"}'
 const play='{"eventname": "Event_play_movie"}'
+const sunny='{"eventname": "Event_sunny_day"}'
+const rainy='{"eventname": "Event_rainny_day"}'
+
+
 
 function snedAssignMessage(assignMessage) {
     console.log("开始传输"+assignMessage)
