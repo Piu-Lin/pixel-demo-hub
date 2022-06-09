@@ -1,10 +1,11 @@
 <template>
-<div id="bottomIcon">
-  <div @click="snedAssignMessage(day)" class="Mode">
-    <img class="Icon" src="/src/assets/Interaction/day.svg" alt=""/>
-    <div class="modeContent">日间</div>
+<div id="bottomBox">
+  <div @click="switchDayNight" class="Mode">
+    <img class="bottonBg" src="/src/assets/Interaction/bottom1.png"/>
+    <img class="Icon" src="/src/assets/Interaction/night.png" alt=""/>
+    <div class="modeContent">夜间模式</div>
   </div>
-  <div @click="snedAssignMessage(night)" class="Mode">
+  <!-- <div @click="snedAssignMessage(night)" class="Mode">
     <img class="Icon" src="/src/assets/Interaction/night.svg" alt=""/>
     <div class="modeContent">夜间</div>
   </div>
@@ -23,16 +24,22 @@
   <div @click="snedAssignMessage(rainy)" class="Mode">
       <img class="Icon" src="/src/assets/Interaction/play.svg" alt=""/>
       <div class="modeContent">雨天</div>
-  </div>
+  </div> -->
 </div>
   
 
 </template>
 
 <script setup>
-
+import {ref} from 'vue'
 const day='{"eventname": "Event_day"}'
 const night='{"eventname": "Event_night"}'
+let isNight = ref(false)
+const switchDayNight=()=>{
+  isNight?snedAssignMessage(day):snedAssignMessage(night)
+  isNight=!isNight
+}
+
 const res='{"eventname": "Event_reset_default_view"}'
 const play='{"eventname": "Event_play_movie"}'
 const sunny='{"eventname": "Event_sunny_day"}'
@@ -50,7 +57,7 @@ function snedAssignMessage(assignMessage) {
 </script>
 
 <style lang="less" scoped>
-#bottomIcon{
+#bottomBox{
     display: flex;
     position:absolute; 
     bottom:20px;
@@ -59,16 +66,18 @@ function snedAssignMessage(assignMessage) {
     z-index: 2;
     .Mode{
       display: flex;
+      position: relative;
       margin: 0px 10px;
-      background-color:white;
-      opacity:.7;
       align-items: center;
-      border: 2px solid white;
-      border-radius: 8px;
       cursor: pointer;
       .Icon{
         width: 30px;
         height: 30px;
+      }
+      .bottonBg{
+        position: absolute;
+        width: 150%;
+        height: 150%;
       }
       .modeContent{
         font-size:24px;

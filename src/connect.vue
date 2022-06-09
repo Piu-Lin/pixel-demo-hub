@@ -9,7 +9,7 @@ const bootstrap = async () => {
   try {
     const launch = new Launcher({
       address,
-      appKey:privacy.appKey,
+      appKey:privacy.appKeyt,
       // onPlay: () => {
       //   window.connection
       //   .emitUIInteraction('Event_base')

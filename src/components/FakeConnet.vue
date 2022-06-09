@@ -15,7 +15,7 @@ const emit = defineEmits(["trigger"])
 const text=()=>{
     timer=setTimeout(() => {
         text2()
-      }, 8000);
+      }, 2000);
 }
 const text2=()=>{
     clearTimeout(timer);

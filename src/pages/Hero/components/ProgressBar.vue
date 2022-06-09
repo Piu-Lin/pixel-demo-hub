@@ -14,7 +14,6 @@ timer = setInterval(() => {
         clearInterval(timer)
     }   
 }, 30)
-
 </script>
 
 <style lang="less" scoped>
@@ -30,13 +29,13 @@ timer = setInterval(() => {
     overflow: hidden;
     border: .1px solid white;
     background-color:rgba(255, 255, 255, 0.5);
-
     #rate{
         position: relative;
         height:100%;
         left: 0px;
         width: 50%;
         background-color:#ffffff;
+        border-radius: 8px;
     }
 }
 </style>

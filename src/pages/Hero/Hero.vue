@@ -9,7 +9,6 @@
  
 <script setup>
 import { onMounted,ref } from "vue"; 
-import LoadAni from './components/LoadAni.vue'
 import ProgressBar from "./components/ProgressBar.vue";
 </script>
 
