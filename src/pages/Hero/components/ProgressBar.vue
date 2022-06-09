@@ -1,7 +1,7 @@
 <template>
        <div id="progress">
-       <div :style="{width:rate+'%'}" id="rate"></div>
-    </div>
+            <div :style="{width:rate+'%'}" id="rate"></div>
+        </div>
 </template>
 
 <script setup>
@@ -21,19 +21,22 @@ timer = setInterval(() => {
 #progress{
     position: absolute;
     width: 70%;
-    height: 5%;
+    height: 1.5%;
     left: 50%;
-    bottom: 15%;
+    bottom: 25%;
     transform:translate(-50%,-50%);
     z-index: 11;
     border-radius: 8px;
     overflow: hidden;
+    border: .1px solid white;
+    background-color:rgba(255, 255, 255, 0.5);
+
     #rate{
         position: relative;
         height:100%;
         left: 0px;
         width: 50%;
-        background-color:#ff1d5e;
+        background-color:#ffffff;
     }
 }
 </style>
