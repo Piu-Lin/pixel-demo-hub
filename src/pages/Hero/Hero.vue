@@ -1,7 +1,6 @@
 <template>
   <div id="hero-box">
-      <img id="hero-jpg" src='/src/assets/Hero/hero.png' alt="">
-      
+      <img id="hero-jpg" src='/src/assets/Hero/hero.jpg' alt="">
       <div id="loading-title">LOADING...</div>
         <ProgressBar/>
   </div>
@@ -30,9 +29,8 @@ import ProgressBar from "./components/ProgressBar.vue";
     #loading-title{
         position: absolute;
         left:50%;
-        top:64%;
+        top:69%;
         transform:translate(-50%,-50%);
-        margin-top: 20px;
         font-size: 18px;
         color:white;
         z-index: 11;

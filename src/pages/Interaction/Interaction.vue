@@ -19,7 +19,7 @@
   </div>
   <div @click="snedAssignMessage(play)" class="Mode">
     <img class="Icon" src="/src/assets/Interaction/play.png" alt=""/>
-    <div class="modeContent">视频播放</div>
+    <div class="modeContent">场景漫游</div>
     <img class="bottonBg" src="/src/assets/Interaction/bottom2.png"/>
   </div>
 </div>

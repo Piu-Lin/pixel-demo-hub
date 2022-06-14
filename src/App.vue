@@ -24,6 +24,8 @@ body {
     width : 100vw;
     height : 100vh;
     margin: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
 </style>
 
