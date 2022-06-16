@@ -14,7 +14,7 @@ import Interaction from './pages/Interaction/Interaction.vue'
 
 /** 资源加载是否完成 */
 let LoadComplete = ref(false)
-const trigger=()=>{
+const trigger=()=>{ 
     console.log("收到扳机")
     LoadComplete.value=true
 }
