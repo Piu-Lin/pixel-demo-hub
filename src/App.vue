@@ -7,7 +7,6 @@
 <script setup>
 import {ref} from "vue"
 import Connect from './connect.vue'
-import MessageDemo from './components/messageDemo.vue'
 import Hero from './pages/Hero/Hero.vue'
 import FakeConnet from './components/FakeConnet.vue'
 import Interaction from './pages/Interaction/Interaction.vue'
